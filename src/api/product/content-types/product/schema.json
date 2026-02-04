@@ -42,7 +42,7 @@
       "type": "boolean",
       "default": true
     },
-    "number": {
+    "order": {
       "type": "integer",
       "default": 0
     }
