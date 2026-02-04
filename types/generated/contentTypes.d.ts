@@ -456,6 +456,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       'api::product.product'
     > &
       Schema.Attribute.Private;
+    number: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     priceUSD: Schema.Attribute.Decimal & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;

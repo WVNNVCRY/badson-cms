@@ -41,6 +41,10 @@
     "isActive": {
       "type": "boolean",
       "default": true
+    },
+    "number": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
