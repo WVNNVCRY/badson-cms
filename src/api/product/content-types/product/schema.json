@@ -45,6 +45,29 @@
     "order": {
       "type": "integer",
       "default": 0
+    },
+    "sizing": {
+      "type": "component",
+      "component": "product.sizing",
+      "repeatable": false
+    },
+    "sizes": {
+      "type": "json"
+    },
+    "details": {
+      "type": "json"
+    },
+    "shippingList": {
+      "type": "json"
+    },
+    "disclaimer": {
+      "type": "text"
+    },
+    "cta": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "json"
     }
   }
 }

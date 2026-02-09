@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_product_sizing_rows",
+  "info": {
+    "displayName": "sizing row"
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "string"
+    },
+    "in": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

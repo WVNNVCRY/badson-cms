@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_product_sizings",
+  "info": {
+    "displayName": "sizing"
+  },
+  "options": {},
+  "attributes": {
+    "notes": {
+      "type": "json"
+    },
+    "columns": {
+      "type": "json"
+    },
+    "rows": {
+      "type": "component",
+      "component": "product.sizing-row",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -444,6 +444,10 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    cta: Schema.Attribute.String;
+    currency: Schema.Attribute.JSON;
+    details: Schema.Attribute.JSON;
+    disclaimer: Schema.Attribute.Text;
     images: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
@@ -459,6 +463,9 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     priceUSD: Schema.Attribute.Decimal & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
+    shippingList: Schema.Attribute.JSON;
+    sizes: Schema.Attribute.JSON;
+    sizing: Schema.Attribute.Component<'product.sizing', false>;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String & Schema.Attribute.Required;
