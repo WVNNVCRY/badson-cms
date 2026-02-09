@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_product_size_options",
+  "info": {
+    "displayName": "size-option"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "isSoldOut": {
+      "type": "boolean"
+    },
+    "stock": {
+      "type": "integer"
+    },
+    "sku": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

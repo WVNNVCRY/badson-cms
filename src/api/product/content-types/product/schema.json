@@ -51,9 +51,6 @@
       "component": "product.sizing",
       "repeatable": false
     },
-    "sizes": {
-      "type": "json"
-    },
     "details": {
       "type": "json"
     },
@@ -68,6 +65,11 @@
     },
     "currency": {
       "type": "json"
+    },
+    "sizes": {
+      "type": "component",
+      "component": "product.size-option",
+      "repeatable": true
     }
   }
 }

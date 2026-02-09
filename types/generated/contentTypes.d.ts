@@ -464,7 +464,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     priceUSD: Schema.Attribute.Decimal & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     shippingList: Schema.Attribute.JSON;
-    sizes: Schema.Attribute.JSON;
+    sizes: Schema.Attribute.Component<'product.size-option', true>;
     sizing: Schema.Attribute.Component<'product.sizing', false>;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     subtitle: Schema.Attribute.String;
